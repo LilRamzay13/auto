@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="image/x-icon" href="src/img/logo.svg" rel="shortcut icon">
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <script src="src/js/main.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="//code.jivo.ru/widget/ZEiPwom1MY" async></script>
+    <title>Japan Auto Family</title>
+
+    <link rel="stylesheet" href="slider/css/simple-adaptive-slider.css">
+    <style>
+        /* стили для элемента body */
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+                sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+        }
+
+        /* дополнительные стили для этого примера */
+        .itcss__items {
+            counter-reset: slide;
+        }
+
+        .itcss__item {
+            counter-increment: slide;
+        }
+
+        .itcss__item>div::before {
+            content: counter(slide);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: #fff;
+            font-style: italic;
+            font-size: 32px;
+            font-weight: bold;
+        }
+    </style>
+    <!-- Подключаем JS слайдера -->
+    <script defer src="slider/js/simple-adaptive-slider.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // активация слайдера
+            new ItcSimpleSlider('.itcss', {
+                loop: true,
+                autoplay: true,
+                swipe: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="navigation">
+            <div class="container">
+                <nav class="nav-hidden">
+                    <input class="nav__check" type="checkbox" id="showmenu" />
+
+                    <label class="nav__showmenu" for="showmenu">&#9776;</label>
+                    <label class="nav__back" for="showmenu"></label>
+                    <ul class="menu">
+                        <img src="src/img/logo.svg" alt="">
+                        <li><a class="menu__item" href="#">Главная</a></li>
+                        <div class="menu-outline"></div>
+                        <li><a class="menu__item" href="#">Новости</a></li>
+                        <div class="menu-outline"></div>
+                        <li><a class="menu__item" href="#feedback">Отзывы</a></li>
+                        <div class="menu-outline"></div>
+                        <li><a class="menu__item" href="#footer">Контакты</a></li>
+                        <div class="menu-outline"></div>
+
+                        <div class="menu-contacts">
+                            <p class="menu-contacts-name">МАКСИМ</p>
+                            <p class="menu-contacts-phone">8 924 439 3939</p>
+                            <p class="menu-contacts-name">АРТЕМ</p>
+                            <p class="menu-contacts-phone">8 924 253 2323</p>
+                        </div>
+
+                        <div class="menu-outline"></div>
+
+                        <div class="menu-adress">
+                            <p>г.Находка</br>
+                                ул. Красноармейская 19</br>
+                                1 этаж</p>
+                        </div>
+
+
+                        <div class="menu-links">
+                            <a target="_blank" href="https://instagram.com/japan_auto_family?igshid=YmMyMTA2M2Y="><img
+                                    src="src/img/instagram__nav.png" alt=""></a>
+                            <a target="_blank" href="https://www.youtube.com/@japanautofamily"><img
+                                    src="src/img/yt__nav.png" alt=""></a>
+                            <a target="_blank" href="https://t.me/+MgndoS185Nc2Mjky"><img src="src/img/tg__nav.png"
+                                    alt=""></a>
+                        </div>
+
+                        <button id="menu-open-popup">Получить Консультацию</button>
+
+                    </ul>
+                </nav>
+
+                <div class="hidden__container">
+
+                    <div class="nav__left">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="">Новости</a></li>
+                                <li><a href="#feedback">Отзывы</a></li>
+                                <li><a href="#footer">Контакты</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="navigation__socials">
+                            <a target="_blank" href="https://instagram.com/japan_auto_family?igshid=YmMyMTA2M2Y="><img
+                                    src="src/img/instagram__nav.png" alt=""></a>
+                            <a target="_blank" href="https://www.youtube.com/@japanautofamily"><img
+                                    src="src/img/yt__nav.png" alt=""></a>
+                            <a target="_blank" href="https://t.me/+MgndoS185Nc2Mjky"><img src="src/img/tg__nav.png"
+                                    alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="navigation__logo">
+                        <img src="src/img/logo.svg" alt="">
+                        <button id="open-popup">Получить Консультацию</button>
+                    </div>
+
+                    <div class="location_header">г.Находка<br>
+                        ул. Красноармейская 19<br>
+                        1 этаж</div>
+
+                    <div class="contacts_header">
+                        <p>Максим<br><span>8 924 439 3939</span></p>
+                        <p>Артем<br><span>8 924 253 2323</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hidden-logo"><img src="src/img/logo.svg" alt=""></div>
+
+
+
+        <div class="container">
+            <div class="contacts">
+                <img src="src/img/home_contacts.png" alt="">
+            </div>
+        </div>
+
+    </header>
+
+
+
+
+    <div class="introduction">
+
+        <div class="introduction__text">
+
+
+            <h1><span>J</span>APAN <span>A</span>UTO <span>F</span>AMILY </h1>
+
+            <div class="list__hilux">
+                <ul>
+                    <li><span class="introduction__text__span">Комиссия от 30 000 руб</span></li>
+
+                    <li><span class="introduction__text__span">Гарантия соответствия купленного авто</span></li>
+
+                    <li><span class="introduction__text__span">Авто без пробега по РФ. Только честные
+                            аукционы</span>
+                    </li>
+
+                    <li><span class="introduction__text__span">Экономия ваших средств. Покупка авто ниже рыночных
+                            цен в
+                            РФ</span></li>
+
+                    <li><span class="introduction__text__span">Прозрачность: Вы можете сами оплатить машину на
+                            прямую на
+                            аукционе по инвойсу</span></li>
+
+                    <li><span class="introduction__text__span">Предоплата от 65 000 руб. Возврат предоплаты в
+                            случае,
+                            если
+                            необходимый автомобиль не был найден</span></li>
+                </ul>
+
+                <div class="hilux__div">
+                    <img class="hilux" src="src/img/hilux.png" alt="">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <section class="about__work">
+
+            <div class="about__flex">
+
+                <div class="">
+                    <img src="src/img/nissan.png" alt="" class="nissan">
+                </div>
+
+                <div class="greyblock">
+                    <h2>Этапы работы</h2>
+                    <div class="stages">
+                        <span>Заявка на подбор авто или расчет авто:</span>
+                        <p>Мы оперативно свяжемся с вами, чтобы уточнить все ваши пожелания</p>
+                        <span>Заключаем договор:</span>
+                        <p>Указваем характеристики желаемого автомобиля и его конечную стоимость за рамки которой не
+                            можем
+                            выйти
+                        </p>
+                        <span>Предоплата:</span>
+                        <p>Вы вносите депозит от 30 000 руб. (входит в конечную стоимость авто)</p>
+                        <span>Подбор и покупка авто:</span>
+                        <p>Подбираем для вас варианты (с подробным описанием и фото) на автоаукционах</p>
+                        <span>Покупка:</span>
+                        <p>Делаем ставки в рамках вашего бюджета</p>
+                        <span>Оформление документов:</span>
+                        <p>Мы занимаемся таможенным оформлением и получением всех необходимых документов</p>
+                        <span>Растаможка:</span>
+                        <p>Вносится последняя часть оплаты – расходы за таможенное оформление</p>
+                    </div>
+                    <a href="#application-id"><img src="src/img/transition__contacts.png" alt=""
+                            class="transition__contacts"></a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="advantages__example">
+        <div class="advantages">
+            <h1>Что вы получаете сотрудничая с нами</h1>
+
+            <div class="spisok">
+                <ul>
+                    <li>Полное сопровождение клиента на
+                        всех этапах покупки и доставки авто</li>
+                    <li>Гарантия соответствия состояния
+                        купленного авто при его получении</li>
+                </ul>
+
+                <ul>
+                    <li>Вы будете первым владельцем на терретории рф
+                        честного автомобился с прозрачной историей </li>
+                    <li>гарантия возврата внесеного депозита
+                        в случае отказа от покупки
+                        до момента выигрыша в аукционе</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example">
+            <h1>Примеры купленных авто на аукционе</h1>
+
+            <section id="slaydesanud">
+                <div class="slaydesan-udentasuv">
+                    <div class="kartinka-slaydera">
+                        <figure class="shadow"></figure>
+                        <figure class="shadow"></figure>
+                        <figure class="shadow"></figure>
+                        <figure class="shadow"></figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+    <div class="video">
+        <h1>Видео-обзоры</h1>
+
+
+        <div class="video__youtube">
+            <div class="iframe__yt">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9wj-QyoQe-g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AT50oqIHjVE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DgM5KqbyfoE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DzzA0QXIZlA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/niGDHAXte44"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/krO79tD5n8Q"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3Dv5HcsvNgQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/N6L5153Tg30"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BfiWiDbIBl4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+        <div class="video__cars">
+            <div class="mohave">
+                <img src="src/img/mohave.png" alt="">
+            </div>
+            <div class="k5">
+                <img src="src/img/k5.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback" id="feedback">
+
+        <div class="feedback__instagram">
+            <h1><span>Авто</span> которые <span>мы</span> привезли, ездят по <span>всей</span> России!</h1>
+            <p>Больше отзывов, фото и видео вы можете найти у нас в инстаграм</p>
+            <a target="_blank" href="https://instagram.com/japan_auto_family?igshid=YmMyMTA2M2Y="><img
+                    src="src/img/instagram__white__logo.png" alt=""></a></br>
+            <a href="#application-id">
+                <div class="wrap">
+                    <button class="button">Подобрать авто</button>
+                </div>
+            </a>
+        </div>
+
+        <div class="feedback__examples">
+
+        </div>
+
+    </div>
+
+
+
+    <div class="application" id="application-id">
+        <h1>Не нашли подходящий автомобиль?</br>Оставьте заявку!</h1>
+
+        <div class="japan__auto">
+            <form action="mail-second.php" method="POST">
+
+                <div class="application-input">
+                    <input type="text" class="form-control" id="" name="user_name" placeholder="Имя" type="text">
+                    <input type="text" class="form-control" id="" name="user_phone" placeholder="Номер телефона"
+                        type="text">
+                    <input type="text" class="form-control" id="" name="user_car" placeholder="Марка авто" type="text">
+                </div>
+
+                <div class="application-button">
+                    <button type="submit" class="btn btn-primary">Подобрать авто из японии</button>
+                </div>
+            </form>
+
+
+        </div>
+
+
+        <div class="korean__auto">
+            <form action="mail-second.php" method="POST">
+                <div class="application-input">
+                    <input input type="text" class="form-control" id="" name="user_name" placeholder="Имя" type="text">
+                    <input type="text" class="form-control" id="" name="user_phone" placeholder="Номер телефона"
+                        type="text">
+                    <input type="text" class="form-control" id="" name="user_car" placeholder="Марка авто" type="text">
+                </div>
+                <div class="application-button">
+                    <button type="submit" class="btn btn-primary">Подобрать авто из Кореи</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="questions">
+        <h1>Часто задаваемые <span>вопросы</span></h1>
+        <div class="container">
+            <details>
+                <summary>Как закзать автомобиль с аукциона японии?</summary>
+                <ul class="summary-ul">
+                    <li>Первым этапом заключаем договор на покупку автомобиля с японского аукциона - прописываем
+                        характеристики и конечную стоимость автомобиля.</li>
+                    <li>Вы вносите депозит на авто аукцион в размере от 50000 до 100000 рублей (сумма депозита зависит
+                        от
+                        стоимости автомобиля), депозит входит в конечную стоимость привезенного авто</li>
+                    <li>Менеджер ежедневно предоставляет варианты автомобилей, которые торгуются на аукционах Японии, с
+                        подробными фотографиями, характеристиками и переводом аукционного листа.</li>
+                    <li>На понравившиеся автомобили делаем ставки, пока не выкупим автомобиль.</li>
+                    <li>По факту приобретения автомобиля вы оплачиваете его стоимость на аукционе и расходы по привозу
+                        авто
+                        из Японии во Владивосток.</li>
+                    <li>По прибытию машины в порт Владивостока, мы занимаемся таможенным оформлением и получением
+                        документов
+                        на автомобиль.</li>
+                    <li>Вносится последняя часть оплаты - расходы за таможенное оформление.</li>
+                    <li>Вывозим автомобиль с порта и передаем вам или отправляем транспортной компанией до вашего
+                        города.
+                    </li>
+                    <li>Комиссия за услуги нашей компании составляет от 30'000 рублей.</li>
+                </ul>
+            </details>
+
+
+            <details>
+                <summary>Как производится оплата?</summary>
+                <ul class="summary-ul"> Оплата может производится 3 способами:
+                    <li>На рассчетный счет компании</li>
+                    <li>На банковскую карту</li>
+                    <li>Наличными в офисе</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Какие гарантии?</summary>
+                <ul class="summary-ul">Гарантии нашей компании:
+                    <li>Стоимость автомобиля, его состояние и характеристики зафиксированы документально и не могут быть
+                        изменены без вашего согласия. Мы несем полную ответственность за соблюдение условий договора.
+                    </li>
+                    <li>У вас есть возможность самостоятельного выбора и проверки автомобиля:Все автомобили которые мы
+                        вам
+                        предлагаем, находятся на аукционах Японии в общем доступе. Вы всегда можете самостоятельно зайти
+                        и
+                        убедиться в достоверности предоставленной информации об автомобиле.</li>
+                    <li>Возврат депозита:В случае расторжения договора до покупки автомобиля, мы вернем вам всю сумму
+                        депозита в
+                        течение 3 рабочих дней.</li>
+                    <li>Сохранность автомобиля:Мы гарантируем, что вы получите автомобиль в том состоянии и с теми
+                        комплектующими, с которыми он был куплен на аукционе Японии. При транспортировке автомобиля из
+                        Японии в
+                        Россию автомобиль застрахован.
+                    </li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>
+                    Доставите ли в мой город?
+                </summary>
+                <ul class="summary-ul">
+                    <li>Большая часть наших клиентов находятся в регионах России. На данный момент процесс доставки
+                        автомобиля
+                        до
+                        клиента полностью налажен и мы этот вопрос можем взять на себя. Автомобили при доставке
+                        страхуются.
+                    </li>
+                </ul>
+            </details>
+        </div>
+    </div>
+
+    <div class="additionally">
+
+        <div class="additionally-list">
+            <h1>Дополнительные <span>услуги</span></h1>
+            <ol>
+                <li class="first-list">Организуем доставку автомобилей с японских аукционов
+                    в любой регион России автовозами</li>
+                <li class="second-list">При постановке на автовоз - оклеим все необходимые элементы
+                    кузова авто, подверженных попаданию сколов</li>
+                <li class="third-list">Подберем и отправим вам любые автозапчасти
+                    вместе с вашим авто</li>
+                <li class="fourth-list">Приобретем и установим сигнализацию, акустику</li>
+                <li class="fifth-list">Подберем и отправим вам шины и литые
+                    диски по вашему запросу</li>
+                <li class="six-list">Приобретем для вас масло по оптовой цене</li>
+            </ol>
+        </div>
+
+
+    </div>
+
+
+    <div class="flex-map">
+        <div class="map" style="position:relative;overflow:hidden;"><iframe id="map_818291515" frameborder="0"
+                width="100%" height="600px"
+                sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
+            <script>
+                type = "text/javascript" > (function (e, t) { var r = document.getElementById(e); r.contentWindow.document.open(), r.contentWindow.document.write(atob(t)), r.contentWindow.document.close() })("map_818291515", "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiI2YyMDIwMiIsInRpdGxlIjoiU21Gd1lXNGdRWFYwYnlCR1lXMXBiSGs9IiwiZGVzY3JpcHRpb24iOiIiLCJ6SW5kZXgiOjEwMDAwMDAwMDB9LCJnZW9tZXRyeSI6eyJ0eXBlIjoiUG9pbnQiLCJjb29yZGluYXRlcyI6WzEzMi44ODEwNzYsNDIuODI1MzU3XX0sImlkIjo4Njl9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo0Mi44MjU3MDI5NDI2MDgyLCJsb24iOjEzMi44ODIwMTU2OTMxODM5LCJ6b29tIjoxN30sImlzV2hlZWxab29tRW5hYmxlZCI6dHJ1ZX0nKTwvc2NyaXB0PjxzY3JpcHQgYXN5bmM9IiIgdHlwZT0idGV4dC9qYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMTU4ODY2MTY4LTEiPjwvc2NyaXB0PjxzY3JpcHQgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4oZnVuY3Rpb24oZSl7ZnVuY3Rpb24gdCgpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyl9d2luZG93LmRhdGFMYXllcj13aW5kb3cuZGF0YUxheWVyfHxbXSx0KCJqcyIsbmV3IERhdGUpLHQoImNvbmZpZyIsZSksd2luZG93Lmd0YWc9dH0pKCdVQS0xNTg4NjYxNjgtMScpPC9zY3JpcHQ+PC9ib2R5Pg==")</script>
+
+        </div>
+        <div class="anyquestion">
+            <h1>Остались <span>вопросы?</span></h1>
+            <p class="anyquestion__p">Задайте их нам и мы с радостью на них ответим</p>
+            <button id="anyquestion-button">Позвоните мне</button>
+            <p class="anyquestion__p">Или позвоните по номеру</p>
+
+            <div class="anyquestion__contacts">
+                <div class="maxim">
+                    <p>Максим</p>
+                    <span>8 924 439 3939</span>
+                </div>
+
+                <div class="artem">
+                    <p>Артем</p>
+                    <span>8 924 253 2323</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer__container">
+
+            <div class="footer__left">
+                <h1><span>J</span>apan<span>A</span>uto<span>F</span>amily</h1>
+
+                <div class="footer__documents">
+
+                    <div class="inn-kpp-ogrn">
+                        <p>ИНН: 25081855582</p></br>
+                        <p>КПП: 272143002</p></br>
+                        <p>ОГРН: 319253600111791</p>
+                    </div>
+
+                    <div class="numbers-adress-mail">
+
+                        <div class="numbers-icon">
+                            <div><img src="src/img/footer__phone.png" alt=""></div>
+                            <div class="numbers">
+                                <p>8 924 439 3939</p>
+                                <p>8 924 253 2323</p>
+                            </div>
+                        </div>
+
+                        <div class="adress-icon">
+                            <div><img src="src/img/footer__adress.png" alt=""></div>
+                            <div>Адрес: Россия, Приморский край, </br>
+                                г. Находка, ул. Красноармейская 19, </br>
+                                1 этаж</div>
+                        </div>
+
+                        <div class="mail-icon">
+                            <div><img src="src/img/footer__mail.png" alt=""></div>
+                            <div class="mail">Japanautofamily@mail.ru</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__right">
+                <div class="partners">
+                    <div class="partners-h">НАШИ <span>ПАРТНЕРЫ</span></div>
+                    <div class="partners-logo">
+                        <a target="_blank" href="https://all-world-cars.com/"><img src="src/img/awc.png" alt=""></a>
+                        <a target="_blank" href="https://goodzillaparts.ru/"><img src="src/img/godzilla.png" alt=""></a>
+                        <a target="_blank" href="https://jimteam.ru/"><img src="src/img/jim.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="popup" class="callme">
+
+        <div class="callme__container">
+
+            <h2>Оставьте ваши данные и мы свяжемся с вами в ближайшее время</h2>
+
+            <form action="mail.php" method="POST">
+                <input type="text" id="" name="user_name" placeholder="Имя" type="text" class="callme__name">
+                <input type="text" id="" name="user_phone" placeholder="Телефон" name="" id="" class="callme__number">
+                <button type="submit" class="btn btn-primary">Позвоните мне</button>
+            </form>
+            <p>Нажимая на кнопку “получить консультацию”, вы даете согласие на обработку персоональных данных и
+                соглашаетесь
+                с политикой конфедециальности.
+            </p>
+
+        </div>
+    </div>
+
+    <div id="burger-menu-id" class="burger-menu">
+
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script defer src="src/js/main.js"></script>
+
+    <script>
+        document.querySelector('.burger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            document.getElementById("burger-menu-id").classList.add("open");
+        })
+    </script>
+
+</body>
+
+</html>
